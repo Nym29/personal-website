@@ -1,0 +1,255 @@
+		html{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100%;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding: 0;
+            margin : 0;
+		}
+		.container{
+			padding: 0px;
+
+		}
+		.header {
+			/*display: inline-block;*/
+			border-bottom: solid 1px;
+		}
+
+		#about-me {
+			text-align: right;
+			font-size: 12px;
+
+            	
+        }
+
+        #about-me h1, #about-me h3 {
+            line-height: 180%;
+            display: inline;
+        }
+
+		#social img{
+			width:30px ;
+		}
+		#myAvatar img{
+			width:100% ;
+		}
+
+		#menu-btn{
+    		top: 110px;
+    		left: 10px;
+    		position: fixed;
+    		z-index: 99;
+    		margin-bottom: 0px;
+
+		}
+
+		#id-responsive-menu{
+		  position: relative;
+		}
+ 
+		.menu-btn span {
+
+			  display: block;
+			  width: 24px;
+			  height: 4px;
+			  margin: 4px 0;
+			  background: rgb(190,0,0);
+			  z-index: 99;
+
+		}
+
+		.responsive-menu{
+		  	display: none;
+		  	list-style-type: none;
+		}
+
+		.responsive-menu ul{
+		list-style-type: none;
+		background-color: #303030;
+		margin-left: 10px;
+		font-variant: small-caps;
+
+		}
+
+		.responsive-menu li{
+		text-align: left;
+		text-decoration: none;
+
+		}
+
+		.responsive-menu li:hover { 
+		    background-color: #212121;
+		}
+
+		.responsive-menu a{
+		  text-decoration: none;
+            color: #fff;
+		}
+		 
+		.expand {
+		  display: block !important; 
+		}
+	
+		#home-page-image{
+			width: 90%;
+			height: 90%;
+			margin-top: 20px;
+		}
+
+		footer {
+		  position: relative;
+		  left: 10px;
+		  /*font-size: 10px;*/
+		  border-top: solid 1px;
+		}
+
+		footer li{
+		  list-style: none;
+		  display: inline-block;
+		}
+		footer a{
+		  text-decoration: none;
+		}
+
+		#copyright{
+		
+			padding-top: 10px;
+		}
+
+		button{
+			padding: 0 10px;
+			margin-left: 10px;
+		}
+
+		#social{
+			
+			float: right;
+		}
+        
+	    .menu-mobile {
+	        display: none;
+	    }
+	    
+	    .menu-dsktop {
+	        background: #212121;
+	        padding : 20px;
+	    }
+
+	    .menu-dsktop a {
+	        padding : 20px;
+	        color : #fff;
+	        text-decoration: none;
+	    }
+	    .menu-dsktop a:hover, .active {
+	        background-color: #1EAEDB !important;
+	    }
+
+	    .expanding-menu{
+	    	display : none; position :absolute; top : 40px; width:100%; margin-left : -10px; padding : 0 10px 0 10px;
+	    }
+	    
+	    .wrapper {
+	        margin : 0 10px 0 10px;    
+	    }
+
+	    .container{
+	        padding:10px;
+	        margin-left: auto;
+	        margin-right: auto;
+	        width: 90%
+
+	    }
+		.card-education{
+	       margin-bottom: 10px;
+	       }
+
+        .front:hover, .back:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+       .front, .back{
+        border: solid 0.5px black;
+
+        background-color: #f7f7f7;
+
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+
+        border-radius: 5px;
+        position : relative; padding :0 ; margin :0;
+        }
+
+        .header-card{
+        	text-align : center; width : 100%; background: #999; border-radius : 5px 5px 0px 0px; padding :5px 0 5px 0;
+        }
+
+        .footer-card{
+        	position : absolute; bottom :0; text-align : center; width : 100%; background: #999; border-radius : 0 0px 5px 5px;
+        }
+
+        .back-description{
+        	margin-left: 5px;
+        }
+      .logo img{
+        position: relative;
+        float: left;
+        width: 40%;
+        margin: 0px;
+        padding: 0px;
+
+      }
+
+      .front-description p{
+        font-family: monospace;
+        margin: 0px;
+        float: right;
+        padding: 0px; 
+        }
+
+        .front-description        {
+        background: white;
+        }
+
+        .main-content{
+        	margin-top: 10px;
+        }
+
+        input:required {
+		  border: 1px dashed blue;
+		}
+		.heading-form{
+			margin-top: 5px;
+		  text-align: center;
+		 }
+
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+    .menu-mobile {
+        display: block;
+    }
+    
+    .menu-dsktop {
+        display: none;
+    }
+    #about-me {
+        text-align: center;
+    }
+    
+    #about-me h1, #about-me h3 {
+        line-height: 100%;
+        display: inline;
+    }
+    
+    #myAvatar {
+        text-align: center;
+    }
+    
+    #myAvatar a img {
+        width: 70%;
+    }
+    
+}

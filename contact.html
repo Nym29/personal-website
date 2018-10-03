@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Contact Page</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+
+
+<script >
+	function submitFunction()
+	{
+		window.confirm("Message sent");
+		
+	}
+
+	function checkEmail()
+	{
+	var email = document.getElementById("exampleEmailInput").value;
+	substring = "@";
+	if (email.indexOf(substring) !== -1;
+		{
+			alert("The email address provided is not valid");
+		}
+	}
+
+
+	}
+
+</script>
+
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function(e){
+            $("#id-responsive-menu button").click(function(){
+                $("#show").slideToggle();
+            });
+        });
+
+    </script>
+
+
+</head>
+<body>
+	       
+     <!--NAVIGATION-->
+  	<div class=" row">
+
+		<nav class="navigation">
+		     <div class="menu-dsktop" > 
+                 <a href="index.html">Home Page</a>
+			     <a href="education.html">Education</a>
+			     <a href="work.html">Work Experience</a>
+			     <a href="skills.html">Skills</a>
+			     <a class="active" href="contact.html">Contact Me</a>
+		     </div>
+		 
+		     <div class="menu-mobile responsive-menu u-full-width" id="id-responsive-menu"> 
+		      <div class="menu-btn u-full-width" >
+				<button style="margin-bottom: 0px">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+		        <ul id="show" class="expanding-menu">
+			           <li><a href="index.html">Home Page</a></li>
+			           <li><a href="education.html">Education</a></li>
+			           <li><a href="work.html">Work Experience</a></li>
+			           <li><a href="skills.html">Skills</a></li>
+			           <li><a href="contact.html">Contact Me</a></li>
+			     </ul>
+			    </div>
+		     </div>
+		</nav>
+	</div>	
+	<!-- NAVIGATION -->
+ 
+	<div class="wrapper">       
+	<!-- HEADER -->
+	
+	    <div class="row header">
+	      <div class="two columns" id="myAvatar">
+	        <a href="file:///Volumes/USB%20URIELL/website/index.html" >
+                <img src="images/myAvatar.png" alt="avatar">
+            </a>
+	      </div>
+
+	      <div id="about-me" class="ten columns">
+              <h1>Uriell Colas</h1><br/>
+              
+	      </div>
+	  </div>
+	 
+
+	  <!-- Primary Page Layout
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	
+<form name="myForm" action="mailto:uriell.colas@gmail.com" method="get" autocomplete="on">
+	<div class="row">
+		<h4 class="heading-form">Contact Form</h4>
+	</div>
+  <div class="row">
+  	 <div class="four columns">
+      <label for="exampleNameInput" >Your Name</label>
+      <input class="u-full-width" type="text" placeholder="John Smith" id="exampleNameInput" required="">
+    </div>
+      	 <div class="four columns">
+      <label for="examplePhoneInput">Your Phone Number</label>
+      <input class="u-full-width" type="tel" placeholder="0830001122" id="examplePhoneInput">
+    </div>
+    <div class="four columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" required="">
+    </div>
+	</div>
+	<div class="row">
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput" required="" >
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Job Proposal</option>
+        <option value="Option 3">Connect</option>
+        <option value="Option 4">Other</option>
+      </select>
+    </div>
+  </div>
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Type your message here …" id="exampleMessage" required="" maxlength="150"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit" onclick="submitFunction()">
+  <input class="button-primary" type="reset" value="Reset">
+</form>
+
+        <!-- FOOTER -->
+     <footer class="twelve columns" >
+      <div class="row" style="padding-top : 10px;">
+        <div id="copyright" class="five columns" style="text-align : center;">
+          <p>© Uriell Colas</p>
+        </div>
+        <div id="cv-download" class="two columns" style="text-align : center;">
+          <a href="docs/CV_Uriell_COLAS.pdf" target="_blank" class="button"> CV</a>
+        </div>
+        <div id="social" class="five columns" style="text-align : center;">
+          <ul >
+            <li><a href="https://www.linkedin.com/in/uriellcolas" target="_blank"><img src="images/icons/linkedin-icon.png" alt="linkedin icon"> </a></li>
+            <li><a href="" target="_blank" ><img src="images/icons/Gmail-icon.png" alt="gmail icon"></a></li>
+            <li><a href="https://github.com/Nym29/" target="_blank"><img src="images/icons/github.png" alt="github icon"> </a></li>
+            <li><a href="https://twitter.com/Nymeria_29" target="_blank"><img src="images/icons/twitter.png"  alt="twitter icon">  </a></li>
+            <li><a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWWTdxbiocWOL"  target="_blank" ><img src="images/icons/spotify.png"  alt="spotify icon"> </a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+      <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
+
+	</div>
+</body>
+
+
+</html>
